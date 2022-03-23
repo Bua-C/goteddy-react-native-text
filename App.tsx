@@ -26,6 +26,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import { fonts } from './src/utils/fonts';
 
 const Section: React.FC<{
   title: string;
@@ -68,26 +69,22 @@ const App = () => {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
+       <Text style={{fontFamily: fonts.notoSansBold,marginTop: 10}}>Noto is a global font collection for writing in all modern and ancient languages. Noto Sans Lao is an unmodulated (“sans serif”) design in the more modern, loopless variant of the Southeast Asian Lao script, mainly suitable for headlines, packaging and advertising. It has multiple weights and widths, and 116 glyphs.</Text>
+       <Text style={{fontFamily: fonts.notoSansRegular,marginTop: 10}}>Noto is a global font collection for writing in all modern and ancient languages. Noto Sans Lao is an unmodulated (“sans serif”) design in the more modern, loopless variant of the Southeast Asian Lao script, mainly suitable for headlines, packaging and advertising. It has multiple weights and widths, and 116 glyphs.</Text>
+       <Text style={{fontFamily: fonts.notoSansMedium,marginTop: 10}}>Noto is a global font collection for writing in all modern and ancient languages. Noto Sans Lao is an unmodulated (“sans serif”) design in the more modern, loopless variant of the Southeast Asian Lao script, mainly suitable for headlines, packaging and advertising. It has multiple weights and widths, and 116 glyphs.</Text>
+       <Text style={{fontFamily: fonts.notoSansBold,marginTop: 20}}>ດ້ວຍເຫດວ່າ: ການຮັບຮູ້ກຽດຕິສັກອັນມີປະຈຳຢູ່ຕົວບຸກຄົນໃນວົງສະກຸນຂອງມະນຸດທຸກໆຄົນ ແລະ ການຮັບຮູ້ສິດສະເໝີພາບ ແລະ ສະເຖຍລະພາບຂອງບຸກຄົນເຫຼົ່ານັ້ນ ປະກອບເປັນຮາກຖານຂອງສິດເສລີພາບ ຍຸດຕິທຳ ແລະ ສັນຕິພາບຂອງໂລກ. ດ້ວຍເຫດວ່າ: ການບໍ່ຮັບຮູ້ ແລະ ໜີ່ນປະໝາດຕໍ່ສິດຂອງມະນຸດນັ້ນໄດ້ເປັນຕົ້ນເຫດໃຫ້ເກີດການກະທຳຢ່າງປ່າເຖື່ອນຊື່ງຈະເຮັດໃຫ້ແຄ້ນໃຈຕໍ່ມະໂນທຳຂອງມະນຸດ ແລະ ເຫັນວ່າການນຳຊື່ງໂລກມະນຸດທີ່ຈະມີອິດສະຫຼະໃນການສະແດງຄວາມເວົ້າ ແລະ ຄວາມເຊື່ອຖືຊື່ງຈະພົ້ນຈາກຄວາມຫວາດຫວັ່ນ ຢ້ານກົວ ແລະ ຍາກຈົນຂົ້ນແຄ້ນນັ້ນໄດ້ຖືກປະກາດວ່າ: ເປັນຄວາມປາຖະໜາອັນຍອດຍີ່ງຂອງມະນຸດ.</Text>
+       <Text style={{fontFamily: fonts.notoSansRegular,marginTop: 10}}>ດ້ວຍເຫດວ່າ: ການຮັບຮູ້ກຽດຕິສັກອັນມີປະຈຳຢູ່ຕົວບຸກຄົນໃນວົງສະກຸນຂອງມະນຸດທຸກໆຄົນ ແລະ ການຮັບຮູ້ສິດສະເໝີພາບ ແລະ ສະເຖຍລະພາບຂອງບຸກຄົນເຫຼົ່ານັ້ນ ປະກອບເປັນຮາກຖານຂອງສິດເສລີພາບ ຍຸດຕິທຳ ແລະ ສັນຕິພາບຂອງໂລກ. ດ້ວຍເຫດວ່າ: ການບໍ່ຮັບຮູ້ ແລະ ໜີ່ນປະໝາດຕໍ່ສິດຂອງມະນຸດນັ້ນໄດ້ເປັນຕົ້ນເຫດໃຫ້ເກີດການກະທຳຢ່າງປ່າເຖື່ອນຊື່ງຈະເຮັດໃຫ້ແຄ້ນໃຈຕໍ່ມະໂນທຳຂອງມະນຸດ ແລະ ເຫັນວ່າການນຳຊື່ງໂລກມະນຸດທີ່ຈະມີອິດສະຫຼະໃນການສະແດງຄວາມເວົ້າ ແລະ ຄວາມເຊື່ອຖືຊື່ງຈະພົ້ນຈາກຄວາມຫວາດຫວັ່ນ ຢ້ານກົວ ແລະ ຍາກຈົນຂົ້ນແຄ້ນນັ້ນໄດ້ຖືກປະກາດວ່າ: ເປັນຄວາມປາຖະໜາອັນຍອດຍີ່ງຂອງມະນຸດ.</Text>
+       <Text style={{fontFamily: fonts.notoSansMedium,marginTop: 10}}>ດ້ວຍເຫດວ່າ: ການຮັບຮູ້ກຽດຕິສັກອັນມີປະຈຳຢູ່ຕົວບຸກຄົນໃນວົງສະກຸນຂອງມະນຸດທຸກໆຄົນ ແລະ ການຮັບຮູ້ສິດສະເໝີພາບ ແລະ ສະເຖຍລະພາບຂອງບຸກຄົນເຫຼົ່ານັ້ນ ປະກອບເປັນຮາກຖານຂອງສິດເສລີພາບ ຍຸດຕິທຳ ແລະ ສັນຕິພາບຂອງໂລກ. ດ້ວຍເຫດວ່າ: ການບໍ່ຮັບຮູ້ ແລະ ໜີ່ນປະໝາດຕໍ່ສິດຂອງມະນຸດນັ້ນໄດ້ເປັນຕົ້ນເຫດໃຫ້ເກີດການກະທຳຢ່າງປ່າເຖື່ອນຊື່ງຈະເຮັດໃຫ້ແຄ້ນໃຈຕໍ່ມະໂນທຳຂອງມະນຸດ ແລະ ເຫັນວ່າການນຳຊື່ງໂລກມະນຸດທີ່ຈະມີອິດສະຫຼະໃນການສະແດງຄວາມເວົ້າ ແລະ ຄວາມເຊື່ອຖືຊື່ງຈະພົ້ນຈາກຄວາມຫວາດຫວັ່ນ ຢ້ານກົວ ແລະ ຍາກຈົນຂົ້ນແຄ້ນນັ້ນໄດ້ຖືກປະກາດວ່າ: ເປັນຄວາມປາຖະໜາອັນຍອດຍີ່ງຂອງມະນຸດ.</Text>
+       <Text style={{fontFamily: fonts.notoSerifBold,marginTop: 10}}>ດ້ວຍເຫດວ່າ: ການຮັບຮູ້ກຽດຕິສັກອັນມີປະຈຳຢູ່ຕົວບຸກຄົນໃນວົງສະກຸນຂອງມະນຸດທຸກໆຄົນ ແລະ ການຮັບຮູ້ສິດສະເໝີພາບ ແລະ ສະເຖຍລະພາບຂອງບຸກຄົນເຫຼົ່ານັ້ນ ປະກອບເປັນຮາກຖານຂອງສິດເສລີພາບ ຍຸດຕິທຳ ແລະ ສັນຕິພາບຂອງໂລກ. ດ້ວຍເຫດວ່າ: ການບໍ່ຮັບຮູ້ ແລະ ໜີ່ນປະໝາດຕໍ່ສິດຂອງມະນຸດນັ້ນໄດ້ເປັນຕົ້ນເຫດໃຫ້ເກີດການກະທຳຢ່າງປ່າເຖື່ອນຊື່ງຈະເຮັດໃຫ້ແຄ້ນໃຈຕໍ່ມະໂນທຳຂອງມະນຸດ ແລະ ເຫັນວ່າການນຳຊື່ງໂລກມະນຸດທີ່ຈະມີອິດສະຫຼະໃນການສະແດງຄວາມເວົ້າ ແລະ ຄວາມເຊື່ອຖືຊື່ງຈະພົ້ນຈາກຄວາມຫວາດຫວັ່ນ ຢ້ານກົວ ແລະ ຍາກຈົນຂົ້ນແຄ້ນນັ້ນໄດ້ຖືກປະກາດວ່າ: ເປັນຄວາມປາຖະໜາອັນຍອດຍີ່ງຂອງມະນຸດ.</Text>
+       <Text style={{fontFamily: fonts.notoSerifMedium,marginTop: 10}}>ດ້ວຍເຫດວ່າ: ການຮັບຮູ້ກຽດຕິສັກອັນມີປະຈຳຢູ່ຕົວບຸກຄົນໃນວົງສະກຸນຂອງມະນຸດທຸກໆຄົນ ແລະ ການຮັບຮູ້ສິດສະເໝີພາບ ແລະ ສະເຖຍລະພາບຂອງບຸກຄົນເຫຼົ່ານັ້ນ ປະກອບເປັນຮາກຖານຂອງສິດເສລີພາບ ຍຸດຕິທຳ ແລະ ສັນຕິພາບຂອງໂລກ. ດ້ວຍເຫດວ່າ: ການບໍ່ຮັບຮູ້ ແລະ ໜີ່ນປະໝາດຕໍ່ສິດຂອງມະນຸດນັ້ນໄດ້ເປັນຕົ້ນເຫດໃຫ້ເກີດການກະທຳຢ່າງປ່າເຖື່ອນຊື່ງຈະເຮັດໃຫ້ແຄ້ນໃຈຕໍ່ມະໂນທຳຂອງມະນຸດ ແລະ ເຫັນວ່າການນຳຊື່ງໂລກມະນຸດທີ່ຈະມີອິດສະຫຼະໃນການສະແດງຄວາມເວົ້າ ແລະ ຄວາມເຊື່ອຖືຊື່ງຈະພົ້ນຈາກຄວາມຫວາດຫວັ່ນ ຢ້ານກົວ ແລະ ຍາກຈົນຂົ້ນແຄ້ນນັ້ນໄດ້ຖືກປະກາດວ່າ: ເປັນຄວາມປາຖະໜາອັນຍອດຍີ່ງຂອງມະນຸດ.</Text>
+       <Text style={{fontFamily: fonts.notoSerifRegular,marginTop: 10}}>ດ້ວຍເຫດວ່າ: ການຮັບຮູ້ກຽດຕິສັກອັນມີປະຈຳຢູ່ຕົວບຸກຄົນໃນວົງສະກຸນຂອງມະນຸດທຸກໆຄົນ ແລະ ການຮັບຮູ້ສິດສະເໝີພາບ ແລະ ສະເຖຍລະພາບຂອງບຸກຄົນເຫຼົ່ານັ້ນ ປະກອບເປັນຮາກຖານຂອງສິດເສລີພາບ ຍຸດຕິທຳ ແລະ ສັນຕິພາບຂອງໂລກ. ດ້ວຍເຫດວ່າ: ການບໍ່ຮັບຮູ້ ແລະ ໜີ່ນປະໝາດຕໍ່ສິດຂອງມະນຸດນັ້ນໄດ້ເປັນຕົ້ນເຫດໃຫ້ເກີດການກະທຳຢ່າງປ່າເຖື່ອນຊື່ງຈະເຮັດໃຫ້ແຄ້ນໃຈຕໍ່ມະໂນທຳຂອງມະນຸດ ແລະ ເຫັນວ່າການນຳຊື່ງໂລກມະນຸດທີ່ຈະມີອິດສະຫຼະໃນການສະແດງຄວາມເວົ້າ ແລະ ຄວາມເຊື່ອຖືຊື່ງຈະພົ້ນຈາກຄວາມຫວາດຫວັ່ນ ຢ້ານກົວ ແລະ ຍາກຈົນຂົ້ນແຄ້ນນັ້ນໄດ້ຖືກປະກາດວ່າ: ເປັນຄວາມປາຖະໜາອັນຍອດຍີ່ງຂອງມະນຸດ.</Text>
+       <Text style={{fontFamily: fonts.notoSerifBold,marginTop: 10}}>Noto is a global font collection for writing in all modern and ancient languages. Noto Sans Lao is an unmodulated (“sans serif”) design in the more modern, loopless variant of the Southeast Asian Lao script, mainly suitable for headlines, packaging and advertising. It has multiple weights and widths, and 116 glyphs.</Text>
+       <Text style={{fontFamily: fonts.notoSerifRegular,marginTop: 10}}>Noto is a global font collection for writing in all modern and ancient languages. Noto Sans Lao is an unmodulated (“sans serif”) design in the more modern, loopless variant of the Southeast Asian Lao script, mainly suitable for headlines, packaging and advertising. It has multiple weights and widths, and 116 glyphs.</Text>
+       <Text style={{fontFamily: fonts.notoSerifMedium,marginTop: 10}}>Noto is a global font collection for writing in all modern and ancient languages. Noto Sans Lao is an unmodulated (“sans serif”) design in the more modern, loopless variant of the Southeast Asian Lao script, mainly suitable for headlines, packaging and advertising. It has multiple weights and widths, and 116 glyphs.</Text>
+       <Text style={{fontFamily: fonts.peaceSansBold,marginTop: 20}}>ດ້ວຍເຫດວ່າ: ການຮັບຮູ້ກຽດຕິສັກອັນມີປະຈຳຢູ່ຕົວບຸກຄົນໃນວົງສະກຸນຂອງມະນຸດທຸກໆຄົນ ແລະ ການຮັບຮູ້ສິດສະເໝີພາບ ແລະ ສະເຖຍລະພາບຂອງບຸກຄົນເຫຼົ່ານັ້ນ ປະກອບເປັນຮາກຖານຂອງສິດເສລີພາບ ຍຸດຕິທຳ ແລະ ສັນຕິພາບຂອງໂລກ. ດ້ວຍເຫດວ່າ: ການບໍ່ຮັບຮູ້ ແລະ ໜີ່ນປະໝາດຕໍ່ສິດຂອງມະນຸດນັ້ນໄດ້ເປັນຕົ້ນເຫດໃຫ້ເກີດການກະທຳຢ່າງປ່າເຖື່ອນຊື່ງຈະເຮັດໃຫ້ແຄ້ນໃຈຕໍ່ມະໂນທຳຂອງມະນຸດ ແລະ ເຫັນວ່າການນຳຊື່ງໂລກມະນຸດທີ່ຈະມີອິດສະຫຼະໃນການສະແດງຄວາມເວົ້າ ແລະ ຄວາມເຊື່ອຖືຊື່ງຈະພົ້ນຈາກຄວາມຫວາດຫວັ່ນ ຢ້ານກົວ ແລະ ຍາກຈົນຂົ້ນແຄ້ນນັ້ນໄດ້ຖືກປະກາດວ່າ: ເປັນຄວາມປາຖະໜາອັນຍອດຍີ່ງຂອງມະນຸດ.</Text>
+       <Text style={{fontFamily: fonts.peaceSansRegular,marginTop: 10}}>ດ້ວຍເຫດວ່າ: ການຮັບຮູ້ກຽດຕິສັກອັນມີປະຈຳຢູ່ຕົວບຸກຄົນໃນວົງສະກຸນຂອງມະນຸດທຸກໆຄົນ ແລະ ການຮັບຮູ້ສິດສະເໝີພາບ ແລະ ສະເຖຍລະພາບຂອງບຸກຄົນເຫຼົ່ານັ້ນ ປະກອບເປັນຮາກຖານຂອງສິດເສລີພາບ ຍຸດຕິທຳ ແລະ ສັນຕິພາບຂອງໂລກ. ດ້ວຍເຫດວ່າ: ການບໍ່ຮັບຮູ້ ແລະ ໜີ່ນປະໝາດຕໍ່ສິດຂອງມະນຸດນັ້ນໄດ້ເປັນຕົ້ນເຫດໃຫ້ເກີດການກະທຳຢ່າງປ່າເຖື່ອນຊື່ງຈະເຮັດໃຫ້ແຄ້ນໃຈຕໍ່ມະໂນທຳຂອງມະນຸດ ແລະ ເຫັນວ່າການນຳຊື່ງໂລກມະນຸດທີ່ຈະມີອິດສະຫຼະໃນການສະແດງຄວາມເວົ້າ ແລະ ຄວາມເຊື່ອຖືຊື່ງຈະພົ້ນຈາກຄວາມຫວາດຫວັ່ນ ຢ້ານກົວ ແລະ ຍາກຈົນຂົ້ນແຄ້ນນັ້ນໄດ້ຖືກປະກາດວ່າ: ເປັນຄວາມປາຖະໜາອັນຍອດຍີ່ງຂອງມະນຸດ.</Text>
+       <Text style={{fontFamily: fonts.peaceSansBold,marginTop: 10}}>Noto is a global font collection for writing in all modern and ancient languages. Noto Sans Lao is an unmodulated (“sans serif”) design in the more modern, loopless variant of the Southeast Asian Lao script, mainly suitable for headlines, packaging and advertising. It has multiple weights and widths, and 116 glyphs.</Text>
+       <Text style={{fontFamily: fonts.peaceSansRegular,marginTop: 10}}>Noto is a global font collection for writing in all modern and ancient languages. Noto Sans Lao is an unmodulated (“sans serif”) design in the more modern, loopless variant of the Southeast Asian Lao script, mainly suitable for headlines, packaging and advertising. It has multiple weights and widths, and 116 glyphs.</Text>
       </ScrollView>
     </SafeAreaView>
   );
